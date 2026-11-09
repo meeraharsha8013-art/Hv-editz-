@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HV Editz | Creative Editing Studio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #050505;
+    border-bottom: 1px solid #292929;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #ffc400;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffc400;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+    radial-gradient(circle at center,
+    #241400 0%, #080808 60%);
+}
+
+.hero img {
+    width: 250px;
+    max-width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    letter-spacing: 5px;
+    color: #ffc400;
+}
+
+.hero h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ff3b30;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    color: #aaa;
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: linear-gradient(90deg, #ffc400, #ff3b30);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #ffc400;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 45px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #292929;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #ffc400;
+}
+
+.card h3 {
+    color: #ffc400;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.about {
+    text-align: center;
+    background: #101010;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #aaa;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050505;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HV EDITZ</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <img src="hv-editz.png" alt="HV Editz Logo">
+
+    <h1>HV EDITZ</h1>
+
+    <h2>DREAM • EDIT • CREATE</h2>
+
+    <p>
+        Welcome to HV Editz Official Website.
+        We transform creative ideas into cinematic visuals.
+        Explore our world of photo and video editing.
+    </p>
+
+    <a href="#services" class="button">
+        EXPLORE OUR SERVICES
+    </a>
+
+</div>
+
+<section id="services">
+
+    <h2 class="section-title">OUR SERVICES</h2>
+
+    <p class="section-subtitle">
+        Creativity Meets Professional Editing
+    </p>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>PHOTO EDITING</h3>
+            <p>
+                Creative photo edits, cinematic colour
+                grading and stylish visual designs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>VIDEO EDITING</h3>
+            <p>
+                Cinematic video edits, reels,
+                transitions and storytelling.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>POSTER DESIGN</h3>
+            <p>
+                Creative posters, thumbnails
+                and digital artwork.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>COLOR GRADING</h3>
+            <p>
+                Beautiful cinematic colours
+                and professional visual moods.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="section-title">ABOUT HV EDITZ</h2>
+
+    <p>
+        HV Editz is a creative editing brand focused on
+        photo editing, video editing and visual storytelling.
+        Our goal is to bring every creative idea to life
+        through imagination, passion and creativity.
+    </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">LET'S CREATE</h2>
+
+    <p>
+        Have a creative idea?
+        Let's turn it into something amazing.
+    </p>
+
+    <a href="mailto:hv.editz@gmail.com" class="button">
+        CONTACT HV EDITZ
+    </a>
+
+</section>
+
+<footer>
+    © 2026 HV Editz. All Rights Reserved.
+</footer>
+
+</body>
+</html
